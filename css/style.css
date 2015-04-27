@@ -1,0 +1,185 @@
+/* 
+BASE STYLES
+**********************************/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Border Box Sizing */
+html { 
+  -webkit-box-sizing: 	border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+  -moz-box-sizing: 		border-box; /* Firefox 1 - 28 */
+  box-sizing: 			border-box; /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
+}
+
+
+body {
+	background: #F1EBEF;
+
+	font-size: 16px;
+	font-family: 'Avenir', 'Avenir Next', 'Helvetica', sans-serif;
+	line-height: 1.25;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/* Header */
+
+
+header {
+	margin: 1em 0 2em; /* 32px 0 */
+}
+
+h1 {
+	font-size: 1.5em; /* 48px */
+	font-weight: normal;
+}
+
+
+/* User-Area */
+
+h2.instructions {
+	font-size: 1em; /* 24px */
+	font-weight: normal;
+}
+
+form {
+	margin-top: 1em;
+}
+
+input {
+	border: none;
+	outline: none;
+	border-radius: 1.5em;
+	height: 3em;
+	display: block;
+	transition: .3s;
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type="text"] {
+	border: 2px solid white;
+	padding: 0 2.5%;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+input[type="text"]:focus {
+	border: 2px solid #C0C0C0;
+}
+
+input[type="submit"] {
+	color: white;
+}
+
+input[type="submit"]:hover {
+	background: coral;
+}
+
+.user-area p {
+	display: none;
+	width: 94%;
+	margin: 0 auto;
+	padding: 1em 0 0.5em;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.query {
+	font-weight: 700;
+}
+
+/* Results-Area */
+
+.results-area {
+	margin: 1em 0;
+}
+
+li {
+	display: inline-block;
+	width: 30%;
+	margin: 0 1% 2%;
+	vertical-align: baseline;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Footer */
+
+footer p {
+	font-size: 0.75em;
+	margin-bottom: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #777;
+	transition: .3s;
+}
+
+.result a:hover {
+	opacity: 0.7;
+	color: coral;
+}
+
+/* Media Queries */
+
+@media (min-width: 1280px) {
+	.container {
+		width: 95%;
+	}
+}
+
+@media (max-width: 1080px) {
+	li {
+		width: 47%;
+		margin: 0 1% 2%;
+	}
+}
+
+@media (max-width: 760px) {
+	li {
+		width: 100%;
+		margin: 0 0 5%;
+	}
+
+
+	input {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
